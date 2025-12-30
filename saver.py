@@ -70,24 +70,8 @@ def create_readme(readme_path, title, day, year):
     initial_readme = f"""# Advent Of Code {year}
 This is my repository for the annual [**Advent of Code**](https://adventofcode.com/).
 
-- [{title}](#day-1)
-
-# Notes on each day's challenge
-
 """
-
     readme = f"""\n## [{title}](https://adventofcode.com/{year}/day/{day})<span id="day-{day}"><span>
-
-```
-┌─┬─┐   ╔═╦═╗
-│■│█│ ▪ ║●║ ║ 
-├─┼─┤   ╠═╬═╣
-│□│¯│ ▫ ║○║ ║ 
-└─┴─┘   ╚═╩═╝
-Part 1:
-
-Part 2:
-```
 """
 
     # Create initial README if it doesn't exist
@@ -162,7 +146,7 @@ def create_day(day, year):
     readme_path = 'README.md'
 
     create_python(day)
-    # create_readme(readme_path, title, day, year)
+    create_readme(readme_path, title, day, year)
 
 
 if __name__ == "__main__":
