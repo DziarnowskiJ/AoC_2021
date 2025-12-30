@@ -10,7 +10,6 @@ with open(base_path + '/inputs/sample/sample_input_day_25.txt', 'r') as file:
     sample_lines = [i.rstrip("\n") for i in file.readlines()]
 
 from utils.geometry import *
-from copy import deepcopy
 
 
 def process(lines):
