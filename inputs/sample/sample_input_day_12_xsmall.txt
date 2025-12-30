@@ -1,0 +1,6 @@
+start-eq
+eq-ab
+ab-cd
+cd-ef
+eq-end
+ef-end
